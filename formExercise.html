@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form method="get">
+        <label for="email">Email</label>
+        <input type="email" name="email">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password">
+        <br>
+        <label for="first_name">First name:</label>
+        <input type="text" name="fname">
+        <label for="last_name">Last name:</label>
+        <input type="text" name="last_name">
+        <br>
+        <label for="date">Date of birth</label>
+        <input type="date" name="date">
+        <br>
+        <label for="tel">Telephone number</label>
+        <input type="tel" name="tel">
+        <br>
+        <label for="plans"> Choose your plan:</label>
+        <select name="plans" id="plans">
+            <option value="free"> Free plan</option>
+            <option value="plan10"> Plan 10</option>
+            <option value="plan20"> Plan 20</option>
+            <option value="plan30"> Plan 30</option>
+        </select>
+        <br>
+        <label for="Pro_plan"> Subscrive Pro plan!</label>
+        <input type="checkbox" name="Pro_plan" value="Pro_plan">
+        <br>
+        <label for="ccn"> Credit card number</label>
+        <input type="tel" name="ccn">
+        <br>
+        <label for="cvc"> CVC</label>
+        <input type="tel" name="cvc" maxlenght="4">
+        <br>
+        <label for="date_expiration">Expiration date</label>
+        <input type="date" name="date_expiration">
+        <br>
+        <label for="address"> Billing address:</label>
+        <input type="text" name="address" id="address">
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
