@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link_homepage a {
+    text-decoration: none;
+    color: black;
+    }
+nav{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.nav_form {
+    display: flex;
+    margin-left: 32px;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 1000px;
+}
+.nav_form_input_container{
+    padding: 13px 16px;
+    display: flex;
+}
+
+.nav_form_input input{
+    border:none
+}
+.search{
+    border: none;
+    background-color: red;
+    color:white;
+    padding: 12px 16px;
+    font-size: 18px;
+}
+.nav_select{
+    display: flex;
+    align-items: center;
+}
+.nav_select select{
+    border: none;
+    padding: 10px;
+}
+.nav_select_link{
+    height: 50px;
+}
+.nav_select_link a{ 
+    padding: 10px;
+    text-decoration: none;
+    color:navy;
+}
+.nav_select_link :hover {
+    background-color: #924fcde4;
+    color: red;
+}
+.nav_buttons button{
+    padding: 13px 16px;
+}
+#accedi{
+    background-color: transparent;
+    color: black;
+}
+#iscriviti{
+    background-color: red;
+    color: white;
+    border: none;
+}
