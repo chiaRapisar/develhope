@@ -1,7 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar{
     background-color: black;
     color:white;
     padding: 15px;
+
 }
 .home{
     padding: 10px;
@@ -13,17 +20,31 @@
     text-decoration: none;
     padding: 10px;
 }
+
 label{
     color: rgb(160, 156, 156);
 }
-.disabled{
-    padding: 10px;
-    text-decoration-color:gray ;
-    
+
+
+    .disabled{
+        padding: 10px;
+        text-decoration: none;
+        color: grey;
+}
+
+
+.search{
+    float: right;
+    border-radius: 10%;
+    color: grey;
+}
+button{
+    background-color: black;
+    color: green;
+    border-radius: 10%;
 }
 
 button:hover{
     background-color: green;
     color: white;
-
 }
