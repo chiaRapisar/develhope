@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.link_homepage a {
+a{
     text-decoration: none;
     color: black;
+}
+.link_homepage a {
+    text-decoration: none;
+    color:white;
     }
 nav{
     display: flex;
@@ -20,15 +23,19 @@ nav{
     margin-left: 32px;
     border: 1px solid black;
     border-radius: 7px;
-    width: 1000px;
+    width: 100%;
 }
 .nav_form_input_container{
     padding: 13px 16px;
     display: flex;
+    width: 100%;
 }
 
 .nav_form_input input{
     border:none
+}
+.nav_form_input{
+    width: 50%;
 }
 .search{
     border: none;
@@ -44,6 +51,8 @@ nav{
 .nav_select select{
     border: none;
     padding: 10px;
+    background-color: transparent;
+    color: white;
 }
 .nav_select_link{
     height: 50px;
@@ -51,7 +60,7 @@ nav{
 .nav_select_link a{ 
     padding: 10px;
     text-decoration: none;
-    color:navy;
+    color: white;
 }
 .nav_select_link :hover {
     background-color: #924fcde4;
@@ -62,10 +71,65 @@ nav{
 }
 #accedi{
     background-color: transparent;
-    color: black;
+    color: white;
+    border-radius: 5px;
+
 }
 #iscriviti{
     background-color: red;
     color: white;
-    border: none;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+#accedi:hover, #iscriviti:hover{
+    background-color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,1);
+    box-shadow: none;
+}
+.form_container{
+flex-basis: 1000px;
+background-color: white;
+border-radius: 7px;
+}
+.second_nav_list ul{
+    display: flex;
+    list-style: none;
+    color: white;
+}
+.second_nav_list li{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+.fa-angle-down{
+    display: inline-block;
+    padding-top: 10px;
+}
+.second_nav_list{
+    margin-left: 120px;
+    width:100%;
+}
+.top_container{
+    background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/fa8d73b85ad8/assets/img/home/hero_photos/J4bBEXXBIHmYLl50X1l72g.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.h1_container{
+    color: white;
+    padding: 64px 0 32px;
+}
+.h1_inner_container{
+    max-width: 88%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 290px;
+}
+.h1_inner_container a{
+    color: white;
+}
+
+.h1_inner_container a:hover{
+    text-decoration: underline;
 }
