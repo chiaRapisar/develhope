@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all{
+    width: 205px;
+    height: 205px;
+    border: 2px solid black;
+    
+    
+}
+div{
+    display: flex;
+    border: 1px solid gray;
+    align-items: center;
+    justify-content: center;
+    
+}
+.calcolatrice{
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    height: 200px;
+    
+    
+}
+.zero{
+    grid-column: span 4;
+    background-color: gray;
+    justify-content: right;
+
+}
+
+.uguale{
+    grid-row: span 5; grid-column: 4;
+    background-color:  red;
+   
+}
+.segni{
+    background-color: rgb(167, 185, 185);
+}
