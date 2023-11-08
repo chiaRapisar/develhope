@@ -1,5 +1,5 @@
 :root{
-    --first-color: #011212;
+    --body-color: #011212;
     --ball-color: #ff8800;
     --ball-width: 100px;
     --ball-heigth: 100px;
@@ -7,12 +7,12 @@
 }
 
 body {
-    background-color: #011212;
+    background-color: var(--body-color);
 }
 
 .ball {
-    width: 100px;
-    height: 100px;
-    background-color: #ff8800;
-    border-radius: 50px;
+    width: var(--ball-width);
+    height: var(--ball-heigth);
+    background-color: var(--ball-color);
+    border-radius: var(--ball-radius);
 }
