@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    width: 30ch;
+    height: 55ch;
+    border: 2px transparent;
+    border-radius: 5%;
+    background: linear-gradient(gray, white) ;
+    box-shadow: 0 0 5px 0 gray;
+    
+}
+.icona{
+    width: 5ch;
+    height: 5ch;
+    border-radius: 50%;
+    background-color: white;
+    grid-area: icona;
+}
+.name {
+grid-area: name;   
+}
+.data{
+    color:white;
+    grid-area: data ;
+}
+.bars{
+    grid-area: bars;
+}
+.header{
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: "icona name name bars"
+    "icona data data .";
+    padding: 8px;
+}
+.image img{
+    width: 100%;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.text span{
+    font-weight: bold;
+}
+.fa-regular{
+    padding: 10px 5px;
+}
+    @media screen and (max-width: 768px){
+        .card{
+            display: flex;
+            flex-wrap: wrap;  
+        }
+    }
+        
+      @media screen and (max-width: 375px) {
+        .card{
+            
+            display: flex;
+            flex-wrap: wrap;
+          
+        }}
