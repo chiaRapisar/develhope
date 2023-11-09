@@ -49,6 +49,43 @@ button:hover{
     color: white;
 }
 
-@media (min-width:768px){
-    .navbar{ }
-}
+@media screen and (max-width: 768px) {
+    .home, .link, .nav_container, .navbar, .search, .disabled, nav, label {
+      display: none;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: black;
+    }
+    .hamburger-conteiner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;     
+    }
+    .hamburger{
+      
+      width: 50px;
+      height: 2px;
+      background-color: white;
+      position: relative;
+    }
+    .hamburger::after, .hamburger::before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: white;
+  
+    }
+    .hamburger::after{
+      top: 10px;
+    }
+    .hamburger::before{
+      top: -10px;
+    }
+  }
