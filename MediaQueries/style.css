@@ -9,13 +9,22 @@ body{
     justify-content: space-around;
 }
 .card{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    width: 90%;
+    margin: 10px auto;
+}
+.card-container{
+    
+    display: flex; 
     width: 30ch;
-    height: 55ch;
+    height: 55ch; 
     border: 2px transparent;
     border-radius: 5%;
     background: linear-gradient(gray, white) ;
     box-shadow: 0 0 5px 0 gray;
+    margin-bottom: 2rem;
     
 }
 .icona{
@@ -58,15 +67,19 @@ grid-area: name;
 }
     @media screen and (max-width: 768px){
         .card{
-            display: flex;
-            flex-wrap: wrap;  
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 10px 10px;
+            row-gap: 20px;
+            width: 90%;
+    
         }
     }
         
       @media screen and (max-width: 375px) {
         .card{
             
-            display: flex;
-            flex-wrap: wrap;
+            display: block;
+            padding: 10px;
           
         }}
