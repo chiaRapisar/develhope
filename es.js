@@ -24,16 +24,70 @@
 
 // crea una funzione che somma le cifre di un numero che passiamo come parametro
 
-function somma(num) {
-    if (typeof num == "number"&& num>0) {
-        const valore =String(num).split("").map(Number)
-        const sum = valore.reduce((a,num)=>a+num,0);
-        return sum
-    }
-    else {
-        return "Inserire un numero"
-    }}
+// function somma(num) {
+//     if (typeof num == "number"&& num>0) {
+//         const valore =String(num).split("").map(Number)
+//         const sum = valore.reduce((a,num)=>a+num,0);
+//         return sum
+//     }
+//     else {
+//         return "Inserire un numero"
+//     }}
 
-console.log(somma(123))
+// console.log(somma(123))
 
+//CALLBACK
+// function stepOne(cb) {
+//     setTimeout(() => {
+//         console.log("Step one completed");
+//         cb()
+//     }, 2000);
 
+// }
+// function stepTwo(cb) {
+//     setTimeout(() => {
+//         console.log("Step two completed");
+//         cb()
+//     }, 1500);
+
+// }
+// function stepThree() {
+//     setTimeout(() => {
+//         console.log("Step three completed");
+//     }, 1000);
+
+// }
+
+// stepOne(()=>stepTwo(()=>stepThree()))
+
+//29-11
+// creiamo una funzione sumNumbers con un paramentro cb, la funzione deve generare un array con 10 numeri random,
+//  e passarli alla cb, la quale deve sommarli e restituire la somma,
+//  che sarà loggata in console dalla funzione sumNumbers
+
+// function sumNumbers(cb) {
+//     let numbers =[]
+//     for (let i = 0; i < 10; i++) {
+//         const number = Math.floor(Math.random()*(10 - 1)+ 1);
+//         numbers.push(number)
+//     } console.log(cb(numbers))  
+// }
+// function sum(arr) {
+//    const sum = arr.reduce((a,number)=> a + number,0);
+//    return sum
+// } 
+
+// sumNumbers(sum)
+
+//creare una funzione che restituisce in un array i primi x numeri a partire da un numero y
+function printNumber(x,y) {
+    let numbers=[];
+    for (let i = y+1; i <= y+x; i++) {
+        numbers.push(i)
+    } return numbers 
+}
+//oppure: let i=1;i<=X; i++)
+//risultato.push(y+1manonsono sicura)
+const result=(printNumber(10,40))
+console.log(result);
+//restituisce i primi 10 numeri dopo il 40

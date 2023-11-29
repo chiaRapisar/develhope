@@ -1,15 +1,19 @@
 function runCallbacks(callbacks) {
-    return callbacks
+  callbacks.forEach(callback => {
+    callback()
+  });
+
+    return callbacks;
   }
   function firstCallback() {
-    console.log(first)
+    console.log("first")
   }
   function secondCallback() {
-    console.log(second)
+    console.log("second")
   }
   
   function thirdCallback() {
-    console.log(third)
+    console.log("third")
   }
   const callbackArray = [firstCallback, secondCallback, thirdCallback];
   runCallbacks(callbackArray);
