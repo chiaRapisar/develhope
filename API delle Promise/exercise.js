@@ -59,15 +59,6 @@ const persons = [
     })
   }
 
-//   Promise.all([fetchPersonById(1),fetchJobById(1)])
-//   .then(data=>console.log(data))
-//   .catch(error=>console.error(error));
-
-  Promise.all([fetchPersonById(1), fetchJobById(2)])
-    .then(([person, job]) => {
-        console.log('Persona trovata:', person);
-        console.log('Lavoro trovato:', job);
-    })
-    .catch(error => {
-        console.error('Errore:', error.message);
-    });
+  Promise.all([fetchPersonById(1),fetchJobById(2)])
+  .then(data=>console.log(data))
+  .catch(error=>console.error(error));
