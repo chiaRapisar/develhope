@@ -1,27 +1,43 @@
-const obj ={
+const obj = {
     name: "John", age: 30
 }
 console.log("Recupero dati in corso...")
 
-function fetchDataFromAPI(obj, callback) {
-    return new Promise((resolve, reject) => (
+function fetchDataFromAPI(obj) {
+    return new Promise((resolve, reject) =>
         setTimeout(() => {
             if (typeof obj === 'object') {
-                resolve(callback(obj))
+                resolve(obj)
             } else {
-                reject(new Error("Errore, manca oggetto"))
+                setTimeout(() => {
+                    reject("errore obj")
+                }), 2000
             }
-        }, 3000)
-    ))
-}
-function handleData(data) {
-    return (`${data.name}, ${data.age}`)
-}
+        }
+        ))};
+   
 
-fetchDataFromAPI(obj, handleData)
-    .then((data) => {
-        console.log(data);
-    })
-    .catch((err) => {
-        console.error(err);
-    });
+fetchDataFromAPI("ciao")
+            .then((data) => {
+                console.log(data);
+            })
+            .catch((err) => {
+                console.error(err);
+            });
+
+// const obj ={
+//     name: "John", age: 30
+// }
+// console.log("Recupero dati in corso...")
+
+// function fetchDataFromAPI(obj) {
+//     return new Promise((resolve, reject) => (
+//         setTimeout(() => {
+//                 resolve(obj)
+//         }, 3000)
+//     ))
+// }
+
+// fetchDataFromAPI(obj)
+// .then(data=>console.log(data))
+// .catch(error=>console.log(error))
