@@ -1,4 +1,4 @@
-let tempoRimanente =10;
+let tempoRimanente = 10;
 console.log("Conto alla rovescia in corso ...");
 function contoAllaRovescia() {
     const tempo = setInterval(() => {
@@ -6,9 +6,10 @@ function contoAllaRovescia() {
         console.log(`Rimane ${tempoRimanente}`)
     }, 1000);
 
-setTimeout(() => {
-    clearInterval(tempo);
-    console.log("Conto alla rovescia terminato!")
-}, 10000);}
+    setTimeout(() => {
+        clearInterval(tempo);
+        console.log("Conto alla rovescia terminato!")
+    }, 10000);
+}
 
 contoAllaRovescia();

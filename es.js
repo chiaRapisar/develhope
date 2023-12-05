@@ -80,14 +80,57 @@
 // sumNumbers(sum)
 
 //creare una funzione che restituisce in un array i primi x numeri a partire da un numero y
-function printNumber(x,y) {
-    let numbers=[];
-    for (let i = y+1; i <= y+x; i++) {
-        numbers.push(i)
-    } return numbers 
-}
-//oppure: let i=1;i<=X; i++)
-//risultato.push(y+1manonsono sicura)
-const result=(printNumber(10,40))
-console.log(result);
-//restituisce i primi 10 numeri dopo il 40
+// function printNumber(x,y) {
+//     let numbers=[];
+//     for (let i = y+1; i <= y+x; i++) {
+//         numbers.push(i)
+//     } return numbers 
+// }
+// //oppure: let i=1;i<=X; i++)
+// //risultato.push(y+1manonsono sicura)
+// const result=(printNumber(10,40))
+// console.log(result);
+// //restituisce i primi 10 numeri dopo il 40
+
+//04 dicembre es nella lezione
+
+
+function Job(num) {
+    return new Promise((resolve, reject)=>{
+        if (typeof num!=="number") {
+            reject("error")
+        }
+         if (num%2!==0) {
+            setTimeout(() => {
+                resolve("odd")
+            }, 1000);
+        } else if(num%2==0){
+            setTimeout(() => {
+        resolve("even");
+            }, 2000);
+        }
+})}
+
+Job(3)
+.then(num => console.log(num))
+.catch(err => console.error(err))
+
+// function myPromise(){ 
+//     return new Promise((resolve, reject) => {
+//     if (typeof arr == 'object') {
+//       setTimeout(() => {
+//         resolve(arr)
+//       }, 1000)
+//     } else {
+//       setTimeout(() => {
+//         reject('inserisci un array')
+//       }, 1000)
+//     }
+//   })}
+  
+//   myPromise()
+//     .then(data => {
+//       const newArr = data.map(num => num * 2)
+//       console.log(newArr);
+//     })
+//     .catch(err => console.log('blocco catch', err))
