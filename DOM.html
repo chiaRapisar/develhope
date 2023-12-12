@@ -1,0 +1,42 @@
+<!-- Stampa in ordine in console:
+
+    l'elemento padre di ul.
+    il secondo elemento figlio di ul.
+    l'elemento fratello successivo del secondo li.
+    l'elemento fratello precedente del secondo li. -->
+    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <script>
+        // const body = document.querySelector('body');
+
+        const html = document.documentElement
+        const body = html.children [1]
+        const ul = body.children[0]
+        const ulGenitore = ul.parentElement
+        console.log(ulGenitore);
+
+        const secondChild = ul.children[1]
+        console.log(secondChild);
+        
+        const nextLi = secondChild.nextElementSibling
+        console.log(nextLi);
+        const prevLi = secondChild.previousElementSibling
+        console.log(prevLi);
+    </script>
+</body>
+
+</html>
