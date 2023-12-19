@@ -41,25 +41,25 @@
     </div>
     <button class="btn">Salva</button>
     <p class="printedform"></p>
-    <script>
-        const span = document.querySelector('.title-name');
-        const name = document.querySelector('.firstname');
-        const btn = document.querySelector('.btn');
-        const email = document.querySelector('.email');
-        const surname = document.querySelector('.lastname');
+    <script src="local.js"> 
+        // const span = document.querySelector('.title-name');
+        // const name = document.querySelector('.firstname');
+        // const btn = document.querySelector('.btn');
+        // const email = document.querySelector('.email');
+        // const surname = document.querySelector('.lastname');
 
-        btn.addEventListener('click', () => {
-            span.innerText = name.value;
-            localStorage.setItem('email', `${email.value}`)
-            localStorage.setItem('name', `${name.value}`)
-            localStorage.setItem('surname', `${surname.value}`)
-        }
-        )
+        // btn.addEventListener('click', () => {
+        //     span.innerText = name.value;
+        //     localStorage.setItem('email', `${email.value}`)
+        //     localStorage.setItem('name', `${name.value}`)
+        //     localStorage.setItem('surname', `${surname.value}`)
+        // }
+        // )
         
-        const username = localStorage.getItem('name')
-        if (username) {
-            span.innerText = username
-        }
+        // const username = localStorage.getItem('name')
+        // if (username) {
+        //     span.innerText = username
+        // }
     </script>
 </body>
 
