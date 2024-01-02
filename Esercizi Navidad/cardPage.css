@@ -1,0 +1,13 @@
+.container{
+    width:200px;
+    padding:15px;
+    background-color: brown;
+    margin-left: 40%;
+}
+body{
+    background-color: rgb(216, 98, 98);
+}
+.card.selected{
+    background-color: rgb(100, 237, 107);
+    color: white;
+    }
