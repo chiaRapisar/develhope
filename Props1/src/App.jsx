@@ -3,8 +3,8 @@ import { Welcome } from "./Welcome";
 export function App() {
     return(
         <div>
-            <h1>My App</h1>
-            <Welcome name="Carmelo"/>
+            <h1>Hello!</h1>
+            <Welcome name="Carmelo" age={18}/>
         </div>
     )
     

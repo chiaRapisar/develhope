@@ -1,4 +1,8 @@
-export function Welcome(props) {
-    const {name} = props
-    return <h2>Welcome, {name}!</h2>
+export function Welcome({ name, age }) {
+  return (
+    <div>
+      <h2>Welcome, <strong>{name}</strong>!</h2>
+      <p>Your age is {age} </p>
+    </div>
+  );
 }
