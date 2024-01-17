@@ -1,0 +1,5 @@
+1- Can you use the Hello component more than once in the App component? What happens if you do?
+2- Can you render the Message component directly within the App component? What happens if you do?
+
+1- Si, posso usare il componente Hello più volte nel componente App, accade che visualizzerò più volte il suo contenuto.
+2-  Si, posso renderizzarlo e vedrò il suo contenuto in pagina
