@@ -29,9 +29,14 @@ export function Login({ onLogin }) {
   function resetForm() {
     setData({ username: "", password: "", checked: false });
   }
+  function handleLogin(event) {
+    event.preventDefault(); // in questo modo preveniamo il comportamento predefinito della del tag
+    console.log(data)    
+  }
 
   return (
     <div>
+      <form onSubmit={handleLogin}>
       <h3>Name</h3>
       <input
         name="username"
@@ -63,6 +68,7 @@ export function Login({ onLogin }) {
       </button>
 
       <button onClick={resetForm}>Reset</button>
+      </form>
     </div>
   );
 }
