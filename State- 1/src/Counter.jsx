@@ -5,6 +5,7 @@ export function Counter({start=0}) {
 
     function CounterIncrement({increment= 1}) {
         setCounter(counter + increment)
+        //setCounter((prevCounter)=> prevCounter +1)  E' lo stato più aggiornato.
     }
 
     return(
