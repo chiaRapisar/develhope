@@ -1,0 +1,14 @@
+
+body {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.welcome{
+  color: rgb(249, 250, 247);
+  background-color: rgb(92, 54, 7);
+  border: 4px solid rgb(232, 246, 75);
+  font-weight:bold;
+ 
+}
