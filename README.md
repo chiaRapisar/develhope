@@ -29,7 +29,7 @@
 <img align="center" width="400" src="images/screenshotCard.png"></img>
 <p>Cliccando sulle frecce posizionate a destra e sinistra delle card è possibile farle scorrere in un verso o in un altro.</p>
 <div display="flex" >
-    <img src="images/darkmode.png"> Nella parte inferiore del sito è presente il bottone che cambia il tema del sito da darkmode a light mode.</img>
+    <img src="images/darkmode.png"> Nella parte inferiore del sito è presente il bottone che cambia il tema del sito da darkmode a light mode e viceversa.</img>
 </div>
 </br>
 <div >
