@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="images/icon-round-512.png" alt="Logo" width="100" height="100">
+    <img src="images/icon-round-512.png" alt="Logo" width="150" height="150">
   <h3 align="center">PancakeSwap</h3>
 </div>
 
@@ -21,7 +21,7 @@
 
 ## About The Project
 
-<img align="center" src="images/Screenshoot .png">
+<img align="center" width="300" src="images/Screenshoot .png">
 <p>Nella parte superiore della pagina si trova la NavBar (Menù), con una serie di menù a discesa che di seguito analizziamo.
 </p>
 <p> A sinistra, dopo il logo e la scritta di PancakeSwap, sono presenti cinque menù a discesa o dropdown: Trade, Earn, Game, NFT e •••, con le rispettive opzioni. A destra, passando il mouse sull’icona globo [icona] è possibile scegliere tra le varie lingue che si aprono in dropdown (anche in fondo alla pagina nel footer). A seguire l’icona delle impostazioni [icona], e BNB Chain  con l’elenco di varie criptovalute. Alla fine è presente il bottone Connect Wallet. Questo bottone si ripete tre volte sul sito, con la stessa funzionalità. </p>
