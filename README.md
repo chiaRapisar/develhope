@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="images/icon-round-512.png" alt="Logo" width="80" height="80">
+    <img src="images/icon-round-512.png" alt="Logo" width="100" height="100">
   <h3 align="center">PancakeSwap</h3>
 </div>
 
@@ -14,7 +14,6 @@
         <li><a href="#built-with">Built With</a></li>
     </li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -30,12 +29,12 @@
 <img align="center" src="images/screenshotCard.png">
 <p>Cliccando sulle frecce posizionate a destra e sinistra delle card è possibile farle scorrere in un verso o in un altro.
 </p>
-<div display="flex" justify-content="pace-between">
+<div display="flex" justify-content="space-between">
 <img src="images/darkmode.png"> 
 <p> Nella parte inferiore del sito è presente il bottone che cambia il tema del sito da darkmode a light mode. </p> 
 </div>
-<div display="flex" justify-content="pace-between">
-<img src="BtnUp.png"> 
+<div display="flex" justify-content="space-between">
+<img src="images/BtnUp.png"> 
 <p> A destra si trova il tasto di scorrimento verso l’alto, che riporta la pagina alla parte superiore del sito. </p> 
 </div>
 
@@ -43,9 +42,9 @@
 
 ### Built With
 
-- [![HTML][HTML.js]][HTML-url]
-- [![CSS][CSS.js]][CSS-url]
-- [![JavaScript][JavaScript.js]][JavaScript-url]
+- HTML
+- CSS
+- JavaScript
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -67,11 +66,6 @@ Project Link: [https://github.com/Annagiusi96/pancakeswap]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGMENTS -->
 
-## Acknowledgments
 
-- [GitHub](https://github.com)
-- [Font Awesome](https://fontawesome.com)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
