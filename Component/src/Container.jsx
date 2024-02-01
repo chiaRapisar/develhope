@@ -9,7 +9,7 @@ export function Container({title, children}) {
         
     }
     return (<>
-        <div className="title" onClick={handlecollaps}>{title} </div>
+        <h1 className="title" onClick={handlecollaps}>{title} </h1>
         <div className={!collapsed ? 'container' : 'container-hidden' }>{children}</div>
         </>
         )

@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <Container title="CLICCA QUI">
+    <Container title="Clicca qui">
     <h3>Questo è il contenuto</h3>
           </Container>
     </>
