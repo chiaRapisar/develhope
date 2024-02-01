@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function MyForm() {
   const [data, setData] = useState({
@@ -6,6 +6,19 @@ export function MyForm() {
     password: "",
     session: false,
   });
+  const mountedRef= useRef(false)
+  const inputRef = useRef(null)
+  useEffect(()=>{
+    if(!mountedRef.current){
+      mountedRef.current = true
+      console.log('Mounting for the first time')
+    } else{
+      console.log('Mounting again for debug purposes')
+    }
+    inputRef.current?.focus()
+  }, [])
+  
+
 
   function InputChange(event) {
     const value = event.target.value;
@@ -32,10 +45,11 @@ export function MyForm() {
     event.preventDefault();
     console.log("Login button pressed", data);
   }
+
   return (
     <form onSubmit={handleLoginFormSubmit}>
       <h1>My Form</h1>
-      <input name="username" value={data.username} onChange={InputChange} />
+      <input ref={inputRef} name="username" value={data.username} onChange={InputChange} />
       <input
         name="password"
         type="password"
