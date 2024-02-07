@@ -1,14 +1,12 @@
 import { Welcome } from "./Welcome";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export function App() {
-    return(
-        <div>
-            <h1>Hello!</h1>
-            <Welcome name="Carmelo" age={18}/>
-        </div>
-    )
-    
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Welcome name="Carmelo" age={18} />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-//Se non passiamo il nome all'interno del componente Welcome non spunta alcun nome, è come se non ci fosse.
-//Posso passare un nome di default in Welcome.jsx ad esempio {name="Carmelo"}
