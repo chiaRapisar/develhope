@@ -10,12 +10,6 @@ price  DECIMAL (10, 2),
 rating DECIMAL (3,2),
 stock_count  INT
   );
-CREATE TABLE demo (ID integer primary key, Name varchar(20), Hint text );
-CREATE TABLE dog (
-id INTEGER PRIMARY KEY,
-name TEXT NOT NULL,
-gender TEXT VARCHAR (1)
-  );
  
 -- INDEX
  
