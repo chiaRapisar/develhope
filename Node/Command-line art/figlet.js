@@ -8,3 +8,6 @@ figlet("C'è il sole!", function (err, data) {
   }
   console.log(data);
 });
+
+// Ho istallato i pacchetti ma non si creano nella cartella. 
+// Funziona comunque
